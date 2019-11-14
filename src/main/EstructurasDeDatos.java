@@ -29,8 +29,10 @@ public class EstructurasDeDatos extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("/GUI/Registro.fxml"));
-            EstructurasDeDatos.registro = new Scene(root);
+            Parent root;
+            System.out.println("Bien 0");
+            root = FXMLLoader.load(getClass().getResource("/GUI/Registro.fxml"));
+            registro = new Scene(root);
             System.out.println("Bien 0");
             root = FXMLLoader.load(getClass().getResource("/GUI/New_Account.fxml"));
             new_account = new Scene(root);
